@@ -1,0 +1,64 @@
+/* Arquivo de estilos principais da aplicação */
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply antialiased;
+  }
+}
+
+/* ── Gradiente da página inteira ─────────────────────────────────────────── */
+body {
+  min-height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    #b91c1c 10%,
+    #c2410c 20%,
+    #ea580c 50%,
+    #eead58 90%,
+    #f8f18c 100%,
+    #ffffff 00%,
+    #ffffff 00%
+  );
+  background-attachment: scroll;
+}
+
+/* ── Keyframes ────────────────────────────────────────────────────────────── */
+
+@keyframes fade-down {
+  from { opacity: 0; transform: translateY(-24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes orb-1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50%       { transform: translate(-20px, 20px) scale(1.1); }
+}
+@keyframes orb-2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50%       { transform: translate(20px, -20px) scale(1.15); }
+}
+@keyframes orb-3 {
+  0%, 100% { transform: translate(-50%, -50%) scale(1);   opacity: 0.5; }
+  50%       { transform: translate(-50%, -50%) scale(1.4); opacity: 0.15; }
+}
+@keyframes ping-slow {
+  0%   { transform: scale(1);   opacity: 0.4; }
+  70%  { transform: scale(1.5); opacity: 0; }
+  100% { transform: scale(1.5); opacity: 0; }
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+/* ── Utility classes ──────────────────────────────────────────────────────── */
+.animate-fade-down  { animation: fade-down  0.6s ease both; }
+.animate-orb-1      { animation: orb-1      8s  ease-in-out infinite; }
+.animate-orb-2      { animation: orb-2      10s ease-in-out infinite; }
+.animate-orb-3      { animation: orb-3      6s  ease-in-out infinite; }
+.animate-ping-slow  { animation: ping-slow  2.5s ease-out  infinite; }
+.animate-blink      { animation: blink      1s  step-end   infinite; }
+
