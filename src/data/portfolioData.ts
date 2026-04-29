@@ -1,5 +1,5 @@
 import type { Profile, Skill, Project, ContactInfo } from '../types';
-import ProfileImg from '../public/avatar.jpeg';
+import ProfileImg from '/public/avatar.jpeg';
 // ─── Perfil ─────────────────────────────────────────────────────────────────
 
 // Dados do perfil do usuário

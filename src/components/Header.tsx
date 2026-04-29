@@ -115,7 +115,7 @@ export default function Header({ profile }: HeaderProps) {
           )}
 
           <a
-            href="/src/public/curriculo.pdf"
+            href="/public/curriculo.pdf"
             download
             className="flex items-center gap-1.5 rounded-full border-2 border-white/70 bg-white/15 px-3 py-1 text-xs font-bold text-white backdrop-blur-sm transition-all duration-200 hover:bg-white hover:text-red-700 hover:scale-105 sm:px-4 sm:py-1.5 sm:text-sm"
           >
