@@ -1,5 +1,7 @@
 import type { CardProps } from '../types';
 
+// ─── Card ───────────────────────────────────────────────────────────────────
+// Componente reutilizável para encapsular conteúdo em um cartão estilizado
 export default function Card({ title, children, className = '', accent = false }: CardProps) {
   return (
     <div

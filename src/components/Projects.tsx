@@ -5,6 +5,8 @@ interface ProjectsProps {
   projects: Project[];
 }
  
+// ─── Projects ───────────────────────────────────────────────────────────────
+// Componente que renderiza a seção de projetos com cards e tecnologias utilizadas
 export default function Projects({ projects }: ProjectsProps) {
   return (
     <section>

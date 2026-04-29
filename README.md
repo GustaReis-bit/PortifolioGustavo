@@ -11,6 +11,8 @@ Este portfólio é uma aplicação web interativa que exibe:
 - 📱 Informações de contato e links para redes sociais
 - 📧 Seção de contato
 
+> Código-fonte revisado com comentários em português em todos os arquivos de `src/`.
+
 ## 🚀 Tecnologias Utilizadas
 
 - **React 19** - Biblioteca JavaScript para criar interfaces de usuário
