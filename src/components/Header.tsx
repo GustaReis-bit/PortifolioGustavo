@@ -12,14 +12,14 @@ export default function Header({ profile }: HeaderProps) {
   return (
     <header className="relative overflow-hidden px-5 pt-14 pb-16 text-white sm:px-10 sm:pt-20 sm:pb-20 lg:px-16 lg:pt-24 lg:pb-24">
 
-      {/* Orbs animados — decorativos, semi-transparentes */}
+      {/* Orbs animados */}
       <span className="pointer-events-none absolute -right-16 -top-16 h-64 w-64 rounded-full bg-white/10 animate-orb-1 sm:h-80 sm:w-80" />
       <span className="pointer-events-none absolute -bottom-16 -left-8 h-56 w-56 rounded-full bg-black/10 animate-orb-2 sm:h-80 sm:w-80" />
       <span className="pointer-events-none absolute top-1/2 left-1/2 h-40 w-40 rounded-full bg-white/5 animate-orb-3" />
 
       <div className="relative z-10 mx-auto max-w-4xl flex flex-col items-center text-center">
 
-        {/* Avatar com anel pulsante */}
+        {/* Avatar */}
         <div className="relative animate-fade-down" style={{ animationDelay: '0ms' }}>
           <div className="absolute inset-0 rounded-full bg-white/30 animate-ping-slow" />
           <div className="relative h-28 w-28 overflow-hidden rounded-full border-4 border-white/50 shadow-2xl sm:h-36 sm:w-36 lg:h-40 lg:w-40">
@@ -37,7 +37,7 @@ export default function Header({ profile }: HeaderProps) {
           </div>
         </div>
 
-        {/* Nome com efeito de letras ao hover */}
+        {/* Nome */}
         <h1
           className="mt-5 font-display text-3xl font-black tracking-tight sm:text-5xl lg:text-6xl animate-fade-down cursor-default select-none"
           style={{ animationDelay: '150ms' }}
@@ -61,7 +61,7 @@ export default function Header({ profile }: HeaderProps) {
           ))}
         </h1>
 
-        {/* Título com efeito de brilho ao hover */}
+        {/* Título */}
         <p
           className="mt-2 text-base font-medium text-white/80 sm:text-xl lg:text-2xl animate-fade-down cursor-default select-none relative"
           style={{ animationDelay: '300ms' }}
@@ -93,7 +93,7 @@ export default function Header({ profile }: HeaderProps) {
           <span className="ml-1 inline-block w-0.5 h-5 bg-white/60 animate-blink align-middle" />
         </p>
 
-        {/* Pills e botão CV */}
+        {/* Social + botão */}
         <div
           className="mt-5 flex flex-wrap justify-center items-center gap-2 sm:gap-3 animate-fade-down"
           style={{ animationDelay: '450ms' }}
@@ -114,9 +114,10 @@ export default function Header({ profile }: HeaderProps) {
             <span className="hidden h-4 w-px bg-white/30 sm:block" />
           )}
 
+          {/* ✅ BOTÃO CORRIGIDO */}
           <a
-            href="/public/curriculo.pdf"
-            download
+            href="/curriculo.pdf"
+            download="curriculo.pdf"
             className="flex items-center gap-1.5 rounded-full border-2 border-white/70 bg-white/15 px-3 py-1 text-xs font-bold text-white backdrop-blur-sm transition-all duration-200 hover:bg-white hover:text-red-700 hover:scale-105 sm:px-4 sm:py-1.5 sm:text-sm"
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5 sm:h-4 sm:w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
