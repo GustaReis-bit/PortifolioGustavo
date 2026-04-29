@@ -18,7 +18,7 @@ export default function Projects({ projects }: ProjectsProps) {
       <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {projects.map((project) => (
           <Card key={project.name} title={project.name} accent>
-            <p className="mb-4 text-sm leading-relaxed text-gray-600">
+            <p className="mb-4 text-sm leading-relaxed text-black-1400">
               {project.description}
             </p>
  

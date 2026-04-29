@@ -50,7 +50,7 @@ export const projects: Project[] = [
   {
     name: 'Rematrícula API',
     description:
-      'PI de rematrícula desenvolvida em NestJS com TypeORM e Supabase (Postgres). Fornece endpoints para gerenciamento de alunos, cursos, disciplinas, turmas, pré-requisitos, matrícula e autenticação (JWT + Google OAuth2).',
+      'API de rematrícula desenvolvida em NestJS com TypeORM e Supabase (Postgres). Fornece endpoints para gerenciamento de alunos, cursos, disciplinas, turmas, pré-requisitos, matrícula e autenticação (JWT + Google OAuth2).',
     technologies: ['NestJS', 'TypeScript', 'Postgres', 'supabase', 'TypeORM', 'JWT', 'Google OAuth2','swagger'],
     url:"https://github.com/GustaReis-bit/Rematricula-API"
   },

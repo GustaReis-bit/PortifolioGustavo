@@ -7,9 +7,9 @@ interface SkillsProps {
 
 // Mapeamento de cores para os níveis de habilidade
 const levelColor: Record<string, string> = {
-  beginner: 'bg-orange-100 text-orange-700 border-orange-200',
-  intermediate: 'bg-red-100 text-red-700 border-red-200',
-  advanced: 'bg-red-700 text-white border-red-800',
+  beginner: 'bg-orange-200 text-orange-700 border-orange-200',
+  intermediate: 'bg-red-300 text-red-700 border-red-200',
+  advanced: 'bg-red-500 text-white border-red-800',
 };
 
 // Mapeamento de rótulos para os níveis de habilidade
@@ -39,7 +39,7 @@ export default function Skills({ skills }: SkillsProps) {
             </span>
             {/* Exibe o nível se disponível */}
             {skill.level && (
-              <span className="pl-1 text-xs text-gray-400">
+              <span className="pl-1 text-xs text-black-1400">
                 {levelLabel[skill.level]}
               </span>
             )}

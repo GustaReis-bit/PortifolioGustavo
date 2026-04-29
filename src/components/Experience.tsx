@@ -49,10 +49,10 @@ export default function Experience({ experiences }: ExperienceProps) {
                         </span>
                       )}
                     </div>
-                    <p className="mt-0.5 text-sm font-semibold text-gray-500">
+                    <p className="mt-0.5 text-sm font-semibold text-black-1200">
                       🏢 {item.company}
                     </p>
-                    <p className="mt-2 text-sm leading-relaxed text-gray-600">
+                    <p className="mt-2 text-sm leading-relaxed text-black-1400">
                       {item.description}
                     </p>
                   </div>

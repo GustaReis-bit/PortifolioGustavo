@@ -11,12 +11,12 @@ interface AboutProps {
 export default function About({ profile }: AboutProps) {
   return (
     <Card title="Sobre Mim" accent>
-      <dl className="space-y-4 text-sm text-gray-600 sm:text-base">
+      <dl className="space-y-4 text-sm text-black-800 sm:text-base">
         <div>
           <dt className="text-xs font-bold uppercase tracking-widest text-red-900">
             Nome completo
           </dt>
-          <dd className="mt-0.5 font-medium text-gray-800">{profile.name}</dd>
+          <dd className="mt-0.5 font-medium text-black-1400">{profile.name}</dd>
         </div>
  
         <div>
@@ -30,7 +30,7 @@ export default function About({ profile }: AboutProps) {
           <dt className="text-xs font-bold uppercase tracking-widest text-red-900">
             Área de interesse
           </dt>
-          <dd className="mt-0.5 font-medium text-gray-800">{profile.area}</dd>
+          <dd className="mt-0.5 font-medium text-black-1400">{profile.area}</dd>
         </div>
       </dl>
     </Card>
