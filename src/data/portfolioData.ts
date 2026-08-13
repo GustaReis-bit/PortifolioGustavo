@@ -1,19 +1,28 @@
-import type { Profile, Skill, Project, ContactInfo } from '../types';
+import type {
+  Profile,
+  Skill,
+  Project,
+  ContactInfo,
+  Education,
+  Experience,
+  Language,
+} from '../types';
 
 // ─── Perfil ─────────────────────────────────────────────────────────────────
 
 // Dados do perfil do usuário
-
 export const profile: Profile = {
   name: 'Gustavo Reis',
 
-  title: 'Full Stack Developer',
+  title: 'Full Stack Developer | Automation',
 
   description:
-    'Desenvolvedor iniciante apaixonado por tecnologia e desenvolvimento. ' +
-    'Busco criar interfaces bonitas e acessíveis que resolvam problemas reais.',
+    'Desenvolvedor Full Stack e estudante de Análise e Desenvolvimento de Sistemas, ' +
+    'com experiência prática em desenvolvimento de APIs, automação de processos, ' +
+    'integrações de sistemas e e-commerce. ' +
+    'Atuo com Node.js, TypeScript, React, NestJS, PostgreSQL, n8n e Shopify.',
 
-  area: 'Desenvolvimento Frontend & UI/UX & Backend',
+  area: 'Desenvolvimento Full Stack, Automação & Integrações',
 
   avatar: '/avatar.jpeg',
 
@@ -29,154 +38,210 @@ export const profile: Profile = {
       icon: 'linkedin',
     },
     {
-      label: 'Whatsapp',
+      label: 'WhatsApp',
       url: 'https://wa.me/5521996766370',
       icon: 'whatsapp',
     },
   ],
 };
 
-// ─── Habilidades ──────────────────────────────────────────────────────────────────
+// ─── Habilidades ────────────────────────────────────────────────────────────
 
-// Lista de habilidades do usuário
 export const skills: Skill[] = [
-  { name: 'HTML', level: 'intermediate' },
-  { name: 'CSS', level: 'intermediate' },
-  { name: 'JavaScript', level: 'beginner' },
-  { name: 'React', level: 'beginner' },
-  { name: 'TypeScript', level: 'beginner' },
-  { name: 'Tailwind CSS', level: 'beginner' },
-  { name: 'Git', level: 'beginner' },
-  { name: 'Bootstrap', level: 'beginner' },
-  { name: 'NodeJS', level: 'intermediate' },
-  { name: 'Java', level: 'advanced' },
-  { name: ' C', level: 'advanced' }
-
+  { name: 'TypeScript', level: 'intermediate' },
+  { name: 'JavaScript', level: 'intermediate' },
+  { name: 'Node.js', level: 'intermediate' },
+  { name: 'NestJS', level: 'intermediate' },
+  { name: 'React', level: 'intermediate' },
+  { name: 'PostgreSQL', level: 'intermediate' },
+  { name: 'REST APIs', level: 'intermediate' },
+  { name: 'n8n', level: 'intermediate' },
+  { name: 'Automação de Processos', level: 'intermediate' },
+  { name: 'Shopify', level: 'intermediate' },
+  { name: 'Git', level: 'intermediate' },
+  { name: 'Docker', level: 'intermediate' },
 ];
 
-// ─── Projetos ─────────────────────────────────────────────────────────────────
+// ─── Projetos ───────────────────────────────────────────────────────────────
 
 // Lista de projetos do usuário
 export const projects: Project[] = [
   {
-    name: 'Rio 200-Graus',
-    description:
-      'Loja virtual de produtos para cozinha, como fogões e fornos de diferentes marcas e tipos, desenvolvida com foco em uma experiência de navegação intuitiva, responsiva e agradável para os usuários.',
-    technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
-    url: 'https://github.com/GustaReis-bit/Rio200-Graus'
-  },
-  {
     name: 'Rematrícula API',
     description:
-      'API de rematrícula acadêmica desenvolvida em NestJS, com arquitetura modular, gerenciamento de alunos, cursos, disciplinas, turmas, pré-requisitos e matrículas, além de autenticação e documentação da API.',
+      'API REST para gerenciamento acadêmico desenvolvida com NestJS e TypeORM, ' +
+      'com gerenciamento de alunos, cursos, disciplinas, turmas, pré-requisitos e matrículas. ' +
+      'Implementação de autenticação JWT e Google OAuth2, PostgreSQL e documentação com Swagger.',
     technologies: [
       'NestJS',
       'TypeScript',
       'PostgreSQL',
-      'Supabase',
       'TypeORM',
       'JWT',
       'Google OAuth2',
-      'Swagger'
+      'Swagger',
     ],
-    url: 'https://github.com/GustaReis-bit/Rematricula-API'
+    url: 'https://github.com/GustaReis-bit/Rematricula-API',
   },
-  {
-    name: 'Portal de Alunos',
-    description:
-      'API RESTful para gerenciamento acadêmico, desenvolvida em NestJS com arquitetura modular, autenticação e recursos voltados ao gerenciamento de alunos e processos de rematrícula.',
-    technologies: [
-      'NestJS',
-      'TypeScript',
-      'PostgreSQL',
-      'Supabase',
-      'TypeORM',
-      'JWT',
-      'Google OAuth2',
-      'Swagger'
-    ],
-    url: 'https://github.com/Portal-do-Aluno'
-  },
+
   {
     name: 'Catálogo de Produtos',
     description:
-      'Aplicação web para gerenciamento e visualização de produtos, com cadastro, edição, exclusão, consulta de detalhes, controle de estoque e categorização.',
-    technologies: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'MockAPI'],
-    url: 'https://github.com/GustaReis-bit/catalogo-de-produtos.git'
+      'Aplicação web para gerenciamento e visualização de produtos, ' +
+      'com cadastro, edição, exclusão, consulta de detalhes, controle de estoque e categorização.',
+    technologies: [
+      'React',
+      'TypeScript',
+      'Vite',
+      'Tailwind CSS',
+      'MockAPI',
+    ],
+    url: 'https://github.com/GustaReis-bit/catalogo-de-produtos.git',
   },
+
   {
-    name: 'Quiz Mobile',
+    name: 'Portal de Alunos',
     description:
-      'Aplicativo mobile de quiz interativo, desenvolvido para responder perguntas, acompanhar pontuação e proporcionar uma experiência dinâmica de aprendizado e entretenimento.',
-    technologies: ['Flutter', 'Dart'],
-    url: 'https://github.com/GustaReis-bit/quiz_mobile.git'
+      'API RESTful para gerenciamento acadêmico, desenvolvida em NestJS com arquitetura modular, ' +
+      'autenticação e recursos voltados ao gerenciamento de alunos e processos de rematrícula.',
+    technologies: [
+      'NestJS',
+      'TypeScript',
+      'PostgreSQL',
+      'Supabase',
+      'TypeORM',
+      'JWT',
+      'Google OAuth2',
+      'Swagger',
+    ],
+    url: 'https://github.com/Portal-do-Aluno',
   },
+
+  {
+    name: 'Rio 200-Graus',
+    description:
+      'Loja virtual de produtos para cozinha, desenvolvida com foco em navegação intuitiva, ' +
+      'design responsivo e experiência de usuário.',
+    technologies: [
+      'HTML',
+      'CSS',
+      'JavaScript',
+      'Bootstrap',
+    ],
+    url: 'https://github.com/GustaReis-bit/Rio200-Graus',
+  },
+
   {
     name: 'Portfólio Gustavo',
     description:
-      'Portfólio profissional desenvolvido para apresentar projetos, habilidades, experiências e informações de contato, com foco em uma interface moderna, responsiva e intuitiva.',
-    technologies: ['React', 'TypeScript', 'Vite', 'Tailwind CSS'],
-    url: 'https://github.com/GustaReis-bit/PortifolioGustavo.git'
-  }
+      'Portfólio profissional desenvolvido para apresentar projetos, habilidades, experiências ' +
+      'e informações de contato, com interface moderna, responsiva e intuitiva.',
+    technologies: [
+      'React',
+      'TypeScript',
+      'Vite',
+      'Tailwind CSS',
+    ],
+    url: 'https://github.com/GustaReis-bit/PortifolioGustavo.git',
+  },
+
+  {
+    name: 'Quiz Mobile',
+    description:
+      'Aplicativo mobile de quiz interativo, desenvolvido para responder perguntas, ' +
+      'acompanhar pontuação e proporcionar uma experiência dinâmica de aprendizado.',
+    technologies: [
+      'Flutter',
+      'Dart',
+    ],
+    url: 'https://github.com/GustaReis-bit/quiz_mobile.git',
+  },
 ];
 
 // ─── Formação ───────────────────────────────────────────────────────────────
 
 export const education: Education[] = [
-
   {
-    institution: ' Faculdade de Educação Tecnológica do Estado do Rio de Janeiro (FETERJ)',
+    institution:
+      'Faculdade de Educação Tecnológica do Estado do Rio de Janeiro (FAETERJ-Rio)',
     course: 'Análise e Desenvolvimento de Sistemas',
     period: '2024.2 — Presente',
     description:
-      'Graduação focada em desenvolvimento de software, estrutura de dados, banco de dados e engenharia de sistemas.',
+      'Graduação com foco em desenvolvimento de software, programação, ' +
+      'banco de dados, engenharia de sistemas e desenvolvimento de aplicações.',
     current: true,
   },
+
   {
     institution: 'StartCapgemini',
     course: 'Linguagem Java',
     period: '2024 — 2025',
     description:
-      'Curso focado em areas com Java, tecnologias como Java;JavaScript;HTML;CSS. Alem de criaçoes de API RESTful, desenvolvimento de aplicações web e fundamentos de programação.',
+      'Formação em programação Java, JavaScript, HTML, CSS, desenvolvimento de APIs RESTful, ' +
+      'aplicações web e fundamentos de programação.',
   },
 ];
 
 // ─── Experiências ───────────────────────────────────────────────────────────
 
 export const experiences: Experience[] = [
-
   {
-    company: 'Estagiário',
-    role: 'Intrutor e Suporte Técnico',
-    period: '2025 — Presente',
+    company: 'Freelancer / Autônomo',
+    role: 'Desenvolvedor de Automação e Integrações',
+    period: '2026/Jul — Presente',
     description:
-      'Atuo como instrutor e suporte técnico em diversas disciplinas, incluindo lógica de programação, desenvolvimento web e manutenção de hardware. Responsável por ministrar aulas, auxiliar alunos com dúvidas técnicas e garantir o bom funcionamento dos equipamentos de informática.',
+      'Desenvolvimento de automações e integrações entre sistemas utilizando n8n, APIs, CRM e WhatsApp. ' +
+      'Atuação com Shopify, GraphQL, Admin API e Liquid, além de desenvolvimento e otimização de aplicações web. ' +
+      'Projetos para OMAMA, The Scale, Ecom Express, Vulkan e Park Life Dog, envolvendo automação, ' +
+      'integração de sistemas, UX/UI, CRO e e-commerce.',
     current: true,
   },
+
+  {
+    company: 'Prefeitura Municipal de Nova Iguaçu',
+    role: 'Instrutor de T.I. | Suporte Técnico',
+    period: '2025/Set — Presente',
+    description:
+      'Planejamento e condução de aulas de Lógica de Programação, Informática Básica, ' +
+      'Inteligência Artificial e Google Workspace. Prestação de suporte técnico aos usuários, ' +
+      'realizando diagnóstico e resolução de problemas de hardware, software e sistemas, ' +
+      'além de manutenção de computadores e impressoras.',
+    current: true,
+  },
+
   {
     company: 'Marcenaria JirehCenter',
-    role: 'Atendimento ao Cliente|Marceneiro',
+    role: 'Atendimento ao Cliente | Marceneiro',
     period: '2022/Mai — 2022/Dez',
     description:
-      'Auxiliava em Criaçao de Projetos em uma Marcenaria, atendimento ao cliente, Criaçao Visual de projetos com o PROMOB e na parte administrativa da empresa.',
+      'Atendimento ao cliente, apoio na criação de projetos de marcenaria, ' +
+      'desenvolvimento visual de projetos utilizando Promob e suporte às atividades administrativas da empresa.',
   },
 ];
 
-// ─── Idiomas ─────────────────────────────────────────────────────────────────
+// ─── Idiomas ────────────────────────────────────────────────────────────────
 
 export const languages: Language[] = [
-
-  { name: 'Português', level: 'Nativo', flag: '🇧🇷' },
-  { name: 'Inglês', level: 'Intermediário', flag: '🇺🇸' },
-  { name: 'Espanhol', level: 'Básico', flag: '🇪🇸' },
+  {
+    name: 'Português',
+    level: 'Nativo',
+    flag: '🇧🇷',
+  },
+  {
+    name: 'Inglês',
+    level: 'Intermediário',
+    flag: '🇺🇸',
+  },
+  {
+    name: 'Espanhol',
+    level: 'Básico',
+    flag: '🇪🇸',
+  },
 ];
 
+// ─── Contato ────────────────────────────────────────────────────────────────
 
-// ─── Contato ─────────────────────────────────────────────────────────────────
-
-// Informações de contato do usuário
 export const contact: ContactInfo = {
   email: 'gustavoreis5905@email.com',
   phone: '+55 (21) 996766370',
 };
-
