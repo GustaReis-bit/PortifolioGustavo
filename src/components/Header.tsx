@@ -116,8 +116,8 @@ export default function Header({ profile }: HeaderProps) {
 
           {/* ✅ BOTÃO CORRIGIDO */}
           <a
-            href="/CurriculoGustavo.pdf"
-            download="CurriculoGustavo.pdf"
+            href="/Curriculo-Gustavo.pdf"
+            download="Curriculo-Gustavo.pdf"
             className="flex items-center gap-1.5 rounded-full border-2 border-white/70 bg-white/15 px-3 py-1 text-xs font-bold text-white backdrop-blur-sm transition-all duration-200 hover:bg-white hover:text-red-700 hover:scale-105 sm:px-4 sm:py-1.5 sm:text-sm"
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5 sm:h-4 sm:w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
