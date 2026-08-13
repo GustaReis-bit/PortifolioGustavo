@@ -1,23 +1,41 @@
 import type { Profile, Skill, Project, ContactInfo } from '../types';
-import ProfileImg from '/public/avatar.jpeg';
+
 // ─── Perfil ─────────────────────────────────────────────────────────────────
 
 // Dados do perfil do usuário
+
 export const profile: Profile = {
   name: 'Gustavo Reis',
+
   title: 'Full Stack Developer',
+
   description:
-    'Desenvolvedor iniciante apaixonado por tecnologia e desenvolvimento . ' +
+    'Desenvolvedor iniciante apaixonado por tecnologia e desenvolvimento. ' +
     'Busco criar interfaces bonitas e acessíveis que resolvam problemas reais.',
-  area: 'Desenvolvimento Frontend & UI/UX & backend',
-  avatar: ProfileImg,
+
+  area: 'Desenvolvimento Frontend & UI/UX & Backend',
+
+  avatar: '/avatar.jpeg',
+
   social: [
-    { label: 'GitHub', url: 'https://github.com/GustaReis-bit', icon: 'github' },
-    { label: 'LinkedIn', url: 'https://www.linkedin.com/in/gustavoreis05/', icon: 'linkedin' },
-    { label: 'Whatsapp', url: 'https://wa.me/5521996766370', icon: 'whatsapp' },
+    {
+      label: 'GitHub',
+      url: 'https://github.com/GustaReis-bit',
+      icon: 'github',
+    },
+    {
+      label: 'LinkedIn',
+      url: 'https://www.linkedin.com/in/gustavoreis05/',
+      icon: 'linkedin',
+    },
+    {
+      label: 'Whatsapp',
+      url: 'https://wa.me/5521996766370',
+      icon: 'whatsapp',
+    },
   ],
 };
- 
+
 // ─── Habilidades ──────────────────────────────────────────────────────────────────
 
 // Lista de habilidades do usuário
@@ -35,36 +53,75 @@ export const skills: Skill[] = [
   { name: ' C', level: 'advanced' }
 
 ];
- 
+
 // ─── Projetos ─────────────────────────────────────────────────────────────────
- 
+
 // Lista de projetos do usuário
 export const projects: Project[] = [
   {
     name: 'Rio 200-Graus',
     description:
-      'Rio 200 Graus é uma loja virtual que oferece produtos de cozinha como fogões e fornos de diferentes marcas e tipos. A aplicação foi desenvolvida utilizando HTML, CSS e é estruturada para proporcionar uma experiência de navegação intuitiva aos usuários.',
-    technologies: ['HTML', 'CSS', 'JavaScript', 'Butstrap'],
-    url: "https://github.com/GustaReis-bit/Rio200-Graus"
+      'Loja virtual de produtos para cozinha, como fogões e fornos de diferentes marcas e tipos, desenvolvida com foco em uma experiência de navegação intuitiva, responsiva e agradável para os usuários.',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
+    url: 'https://github.com/GustaReis-bit/Rio200-Graus'
   },
   {
     name: 'Rematrícula API',
     description:
-      'API de rematrícula desenvolvida em NestJS com TypeORM e Supabase (Postgres). Fornece endpoints para gerenciamento de alunos, cursos, disciplinas, turmas, pré-requisitos, matrícula e autenticação (JWT + Google OAuth2).',
-    technologies: ['NestJS', 'TypeScript', 'Postgres', 'supabase', 'TypeORM', 'JWT', 'Google OAuth2','swagger'],
-    url:"https://github.com/GustaReis-bit/Rematricula-API"
+      'API de rematrícula acadêmica desenvolvida em NestJS, com arquitetura modular, gerenciamento de alunos, cursos, disciplinas, turmas, pré-requisitos e matrículas, além de autenticação e documentação da API.',
+    technologies: [
+      'NestJS',
+      'TypeScript',
+      'PostgreSQL',
+      'Supabase',
+      'TypeORM',
+      'JWT',
+      'Google OAuth2',
+      'Swagger'
+    ],
+    url: 'https://github.com/GustaReis-bit/Rematricula-API'
   },
   {
     name: 'Portal de Alunos',
     description:
-      'API RESTful completa para gerenciamento de rematrícula acadêmica, desenvolvida em NestJS com arquitetura modular, autenticação robusta e documentação interativa.',
-    technologies: ['NestJS', 'TypeScript', 'Postgres', 'supabase', 'TypeORM', 'JWT', 'Google OAuth2','swagger'],
-    url:"https://github.com/Portal-do-Aluno"
+      'API RESTful para gerenciamento acadêmico, desenvolvida em NestJS com arquitetura modular, autenticação e recursos voltados ao gerenciamento de alunos e processos de rematrícula.',
+    technologies: [
+      'NestJS',
+      'TypeScript',
+      'PostgreSQL',
+      'Supabase',
+      'TypeORM',
+      'JWT',
+      'Google OAuth2',
+      'Swagger'
+    ],
+    url: 'https://github.com/Portal-do-Aluno'
   },
+  {
+    name: 'Catálogo de Produtos',
+    description:
+      'Aplicação web para gerenciamento e visualização de produtos, com cadastro, edição, exclusão, consulta de detalhes, controle de estoque e categorização.',
+    technologies: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'MockAPI'],
+    url: 'https://github.com/GustaReis-bit/catalogo-de-produtos.git'
+  },
+  {
+    name: 'Quiz Mobile',
+    description:
+      'Aplicativo mobile de quiz interativo, desenvolvido para responder perguntas, acompanhar pontuação e proporcionar uma experiência dinâmica de aprendizado e entretenimento.',
+    technologies: ['Flutter', 'Dart'],
+    url: 'https://github.com/GustaReis-bit/quiz_mobile.git'
+  },
+  {
+    name: 'Portfólio Gustavo',
+    description:
+      'Portfólio profissional desenvolvido para apresentar projetos, habilidades, experiências e informações de contato, com foco em uma interface moderna, responsiva e intuitiva.',
+    technologies: ['React', 'TypeScript', 'Vite', 'Tailwind CSS'],
+    url: 'https://github.com/GustaReis-bit/PortifolioGustavo.git'
+  }
 ];
- 
+
 // ─── Formação ───────────────────────────────────────────────────────────────
- 
+
 export const education: Education[] = [
 
   {
@@ -83,9 +140,9 @@ export const education: Education[] = [
       'Curso focado em areas com Java, tecnologias como Java;JavaScript;HTML;CSS. Alem de criaçoes de API RESTful, desenvolvimento de aplicações web e fundamentos de programação.',
   },
 ];
- 
+
 // ─── Experiências ───────────────────────────────────────────────────────────
- 
+
 export const experiences: Experience[] = [
 
   {
@@ -104,9 +161,9 @@ export const experiences: Experience[] = [
       'Auxiliava em Criaçao de Projetos em uma Marcenaria, atendimento ao cliente, Criaçao Visual de projetos com o PROMOB e na parte administrativa da empresa.',
   },
 ];
- 
+
 // ─── Idiomas ─────────────────────────────────────────────────────────────────
- 
+
 export const languages: Language[] = [
 
   { name: 'Português', level: 'Nativo', flag: '🇧🇷' },
